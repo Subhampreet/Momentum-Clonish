@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Tab</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+</head>
+<body>
+    <img id="image">
+    <div class="header">
+        <img id="weather-icon">
+        <div id="temprature">temp</div>
+        <div id="city-name">your city</div>
+    </div>
+    
+    <div class="center">
+        <div id="time"></div>
+        <h1 id="headline">What is your main focus today?</h1>
+        <input id ="focus" type="text">
+    </div>
+<div class="footer">
+    <i class="fas fa-quote-left"></i>
+    <div id= "quote"></div>
+    <div id="author"></div>
+</div>        
+    
+    <!-- jq.js contains jquery library in compressed form because extensions dont allow to use cdn link
+    without special permissions in manifest.json -->
+    <script src="script/jq.js"></script>
+    
+    <!-- linking main js file -->
+    <script src="script/index.js"></script> 
+    
+    <!-- linking weather js file -->
+    <script src="script/weather.js"></script>
+    
+    <!-- linking quote js file -->
+    <script src="script/quote.js"></script>
+
+
+</body>
+</html> 
