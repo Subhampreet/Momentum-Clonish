@@ -22,7 +22,7 @@ $(function(){
         fetch(url)
           .then(response => response.json())
           .then(data =>{ 
-              const temp = data.main.temp;
+              const temp = Math.floor(data.main.temp);
               const city = data.name;
               document.getElementById('temprature').innerHTML= temp + "°" +"c";
               document.getElementById('city-name').innerHTML=city;

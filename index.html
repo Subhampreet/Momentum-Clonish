@@ -4,26 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Tab</title>
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <img id="image">
     <div class="header">
         <img id="weather-icon">
-        <div id="temprature">temp</div>
-        <div id="city-name">your city</div>
+        <div id="temprature">temp</div><br>
     </div>
+    <div id="city-name">your city</div>
     
     <div class="center">
         <div id="time"></div>
+        <h1 id="hello">Hello!</h1>
         <h1 id="headline">What is your main focus today?</h1>
-        <input id ="focus" type="text">
+        <input id ="focus" type="text" autocomplete="off">
     </div>
-<div class="footer">
-    <i class="fas fa-quote-left"></i>
-    <div id= "quote"></div>
-    <div id="author"></div>
-</div>        
+    <div class="footer">
+        <!-- <i class="fas fa-quote-left fa-3x"></i> -->
+        <q id= "quote"></q>
+        <h3 id="author"></h3>
+    </div>        
     
     <!-- jq.js contains jquery library in compressed form because extensions dont allow to use cdn link
     without special permissions in manifest.json -->

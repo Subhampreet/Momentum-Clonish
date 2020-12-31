@@ -10,5 +10,5 @@ fetch(quoteApi)
      console.log(quoteApi);
      console.log(authorApi);
      document.getElementById('quote').innerHTML= quoteApi;
-     document.getElementById('author').innerHTML= authorApi;
+     document.getElementById('author').innerHTML= "- "+authorApi;
  })

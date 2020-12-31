@@ -14,10 +14,14 @@ function padWithZero(num){
 function getTime()
 {
 const time = new Date();
-const hours = padWithZero( time.getHours());
+var hours =  time.getHours();
+hours = hours % 12;
+hours = hours ? hours : 12;
+var ampm = hours >= 12 ? 'pm' : 'am';
 const minutes = padWithZero(time.getMinutes());
 const seconds = padWithZero(time.getSeconds());
-document.getElementById('time').innerHTML = hours + ":" + minutes + ":" + seconds;
+
+document.getElementById('time').innerHTML = hours + ":" + minutes  ;
 }
 //function to call getTime every second
 setInterval(getTime,1000);
