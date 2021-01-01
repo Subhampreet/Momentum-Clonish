@@ -15,6 +15,17 @@ function getTime()
 {
 const time = new Date();
 var hours =  time.getHours();
+function getGreet(){
+    if(hours>4 && hours<12)
+       greet="Good Morning."
+    else if(hours>=12 && hours<4)
+       greet="Good Afternoon."
+    else 
+        greet="Good Evening."
+    return greet;         
+}
+var  greet = getGreet();
+console.log(greet);
 hours = hours % 12;
 hours = hours ? hours : 12;
 var ampm = hours >= 12 ? 'pm' : 'am';
@@ -22,43 +33,9 @@ const minutes = padWithZero(time.getMinutes());
 const seconds = padWithZero(time.getSeconds());
 
 document.getElementById('time').innerHTML = hours + ":" + minutes  ;
+
+document.getElementById('greeting').innerHTML = greet;
+
 }
 //function to call getTime every second
 setInterval(getTime,1000);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//Quotes API
-// const api="https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?";
-
-// fetch(api)
-//   .then(function(response) {
-//     return response.json();
-//   })
-//   .then(function(data) {
-//     console.log(data);
-//   });
